@@ -121,7 +121,40 @@ h1, h2, h3, .logo {
 
 .hero-actions {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
+}
+
+/* Play Store Badge Link styling */
+.play-store-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    height: 58px; /* matching the height of standard buttons */
+}
+
+.play-store-link:hover {
+    transform: translateY(-3px);
+}
+
+.play-store-badge {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.nav-btn {
+    background: var(--primary-slate);
+    color: white !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #4d5eb3;
+    transform: translateY(-2px);
 }
 
 .btn {
